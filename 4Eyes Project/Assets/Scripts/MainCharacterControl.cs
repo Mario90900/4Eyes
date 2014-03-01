@@ -97,8 +97,9 @@ public class MainCharacterControl : MonoBehaviour
 				Vector2 tempVector = new Vector2 ((climbingBox.center.y - (climbingBox.size.y / 2)), (climbingBox.center.y + (climbingBox.size.y / 2)));
 				climbRange = tempVector;
 				isClimbing = true;
-				float x = climbing.collider.transform.position.x;
-				transform.position.Set(x, transform.position.y, transform.position.z);
+				float x = climbing.transform.position.x;
+				transform.position  = new Vector3(x, transform.position.y, transform.position.z);
+				rigidbody2D.velocity = new Vector2 (0, 0);
 				rigidbody2D.gravityScale = 0f;
 			}
 		}
