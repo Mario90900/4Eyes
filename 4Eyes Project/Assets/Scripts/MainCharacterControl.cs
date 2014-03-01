@@ -11,10 +11,10 @@ public class MainCharacterControl : MonoBehaviour
 	public float climbSpeed = 5f;
 
 	private Transform groundCheck;
-	private RaycastHit2D climbing;
-	private Vector2 climbRange; // The X in the vector is the minimum lowest, while the Y is the maximum.
 	private bool grounded = false;
 	private bool isClimbing = false;
+	private bool atTop = false;
+	private bool atBottom = false;
 	private bool canClimb = false;
 	
 	// Use this for initialization
@@ -33,6 +33,8 @@ public class MainCharacterControl : MonoBehaviour
 		}
 
 		canClimb = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Climbable")); // Testing for climbable surfaces.
+		atTop = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("ClimbableTop"));
+		atBottom = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("ClimbableBottom"));
 
 		if (Input.GetButtonDown("Jump") && grounded) // Determines if to jump or not.
 			jump = true;
@@ -52,9 +54,9 @@ public class MainCharacterControl : MonoBehaviour
 
 			float v = Input.GetAxis ("Vertical"); // Direction to climb in.
 
-			if (v > 0 && (transform.position.y < climbRange.y)){
+			if (v > 0 && !atTop){
 				rigidbody2D.velocity = new Vector2(0f, (v*climbSpeed));
-			} else if (v < 0 && (transform.position.y > climbRange.x)){
+			} else if (v < 0 && !atBottom){
 				rigidbody2D.velocity = new Vector2(0f, (v*climbSpeed));
 			} else {
 				rigidbody2D.velocity = new Vector2(0f, 0f);
@@ -92,10 +94,7 @@ public class MainCharacterControl : MonoBehaviour
 			float v = Input.GetAxis ("Vertical");
 				
 			if (canClimb && (v != 0f)){
-				climbing = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Climbable"));
-				BoxCollider2D climbingBox = (BoxCollider2D)climbing.collider;
-				Vector2 tempVector = new Vector2 ((climbingBox.center.y - (climbingBox.size.y / 2)), (climbingBox.center.y + (climbingBox.size.y / 2)));
-				climbRange = tempVector;
+				RaycastHit2D climbing = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Climbable"));
 				isClimbing = true;
 				float x = climbing.transform.position.x;
 				transform.position  = new Vector3(x, transform.position.y, transform.position.z);
@@ -112,6 +111,21 @@ public class MainCharacterControl : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	void OnTriggerEnter2D(Collider2D otherCollider)
+	{
+
+	}
+
+	void OnTriggerExit2D(Collider2D otherCollider)
+	{
+
+	}
+
+	void OnTriggerStay2D(Collider2D otherCollider)
+	{
+
 	}
 }
 
