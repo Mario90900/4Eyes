@@ -1263,7 +1263,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 430957111}
   - 60: {fileID: 430957112}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BrokenStairCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1662,7 +1662,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 549117278}
   - 61: {fileID: 549117279}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: SecondWallCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,7 +2299,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 754781341}
   - 61: {fileID: 754781342}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FloorCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3147,7 +3147,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1123403536}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: spikedStair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4088,7 +4088,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1656606425}
   - 61: {fileID: 1656606426}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: SecondRoofCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +4925,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1820783844}
   - 61: {fileID: 1820783845}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WallCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
