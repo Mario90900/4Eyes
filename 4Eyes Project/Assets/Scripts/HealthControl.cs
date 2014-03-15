@@ -25,11 +25,12 @@ public class HealthControl : MonoBehaviour
 
 		void hurt (int amount)
 		{
-			if ((Health - amount) <= 0f){
+			if ((health - amount) <= 0f){
 				health = 0;
-				playerDie ();
+				//playerDie ();
 			} else {
 				health -= amount;
 			}
-}
+		}
 
+}

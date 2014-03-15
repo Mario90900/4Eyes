@@ -2199,6 +2199,7 @@ GameObject:
   - 58: {fileID: 747563511}
   - 61: {fileID: 747563509}
   - 61: {fileID: 747563512}
+  - 95: {fileID: 747563513}
   - 114: {fileID: 747563508}
   m_Layer: 9
   m_Name: player
@@ -2290,6 +2291,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1.29999995, y: 2.80831289}
   m_Center: {x: 0, y: -.00563764572}
+--- !u!95 &747563513
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747563506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &754781340
 GameObject:
   m_ObjectHideFlags: 0
