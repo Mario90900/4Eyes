@@ -807,6 +807,11 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 991dd71ac5bae114fb151f4e1f0f2a19, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: e355eda5395f9d6499471f57709d1193,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 991dd71ac5bae114fb151f4e1f0f2a19, type: 2}
   m_RootGameObject: {fileID: 747563506}
@@ -2199,8 +2204,8 @@ GameObject:
   - 58: {fileID: 747563511}
   - 61: {fileID: 747563509}
   - 61: {fileID: 747563512}
-  - 95: {fileID: 747563513}
   - 114: {fileID: 747563508}
+  - 95: {fileID: 747563513}
   m_Layer: 9
   m_Name: player
   m_TagString: Player
@@ -4007,7 +4012,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: ca9f230c9b888c849bce6064334d7afd, type: 3}
+  m_Sprite: {fileID: 21300002, guid: e355eda5395f9d6499471f57709d1193, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1596710143
 GameObject:
