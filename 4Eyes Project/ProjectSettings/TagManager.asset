@@ -4,7 +4,7 @@
 TagManager:
   tags:
   - Ground
-  - Cimbable
+  - Climbable
   - ClimbableTop
   - ClimbableBottom
   - 
@@ -15,15 +15,6 @@ TagManager:
   - 
   - 
   - 
-  - Bullet
-  - 
-  - Enemy
-  - ExplosionFX
-  - ground
-  - Obstacle
-  - HealthBar
-  - BombPickup
-  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -32,11 +23,11 @@ TagManager:
   Builtin Layer 5: 
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Climbable
-  User Layer 9: Player
-  User Layer 10: Enemies
-  User Layer 11: Pickups
-  User Layer 12: Ground
+  User Layer 8: Player
+  User Layer 9: Enemies
+  User Layer 10: Items
+  User Layer 11: Ground
+  User Layer 12: Climbable
   User Layer 13: ClimbableTop
   User Layer 14: ClimbableBottom
   User Layer 15: TerrainDamage

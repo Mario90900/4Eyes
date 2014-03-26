@@ -17,10 +17,11 @@ public class HealthControl : MonoBehaviour
 
 		void heal (int amount)
 		{
-			if ((health + amount) >= maxHealth) 
-				health = maxHealth;
-			else
-				health += amount;
+			if ((health + amount) >= maxHealth){
+					health = maxHealth;
+			} else {
+					health += amount;
+			}
 		}
 
 		void hurt (int amount)
