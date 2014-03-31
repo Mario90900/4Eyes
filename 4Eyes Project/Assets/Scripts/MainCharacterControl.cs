@@ -16,11 +16,13 @@ public class MainCharacterControl : MonoBehaviour
 	private bool atTop = false;
 	private bool atBottom = false;
 	private bool canClimb = false;
+	private Animator anim;
 	
 	// Use this for initialization
 	void Awake ()
 	{
 		groundCheck = transform.Find ("groundCheck");
+		anim = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
@@ -67,11 +69,18 @@ public class MainCharacterControl : MonoBehaviour
 				jump = false;
 				isClimbing = false;
 				rigidbody2D.gravityScale = 1f;
+				anim.SetBool("isClimbing", isClimbing);
 			}
 
 		} else {
 			// Borrowed from the tutorial player control, it was very well written in utilizing the physics for even moving the player. 
 			float h = Input.GetAxis ("Horizontal");
+
+			if (h != 0 && !anim.GetBool("walking")){
+				anim.SetBool("walking", true);
+			} else if (h == 0 && anim.GetBool ("walking")){
+				anim.SetBool("walking", false);
+			}
 
 			if (h * rigidbody2D.velocity.x < walkMaxSpeed)
 				rigidbody2D.AddForce (Vector2.right * h * walkForce);
@@ -87,6 +96,7 @@ public class MainCharacterControl : MonoBehaviour
 
 			if (jump) {
 				rigidbody2D.AddForce (new Vector2 (0f, jumpForce));
+				anim.SetTrigger("jump");
 				jump = false;
 			}
 			// End of borrowed code
@@ -100,6 +110,7 @@ public class MainCharacterControl : MonoBehaviour
 				transform.position  = new Vector3(x, transform.position.y, transform.position.z);
 				rigidbody2D.velocity = new Vector2 (0, 0);
 				rigidbody2D.gravityScale = 0f;
+				anim.SetBool("isClimbing", isClimbing);
 			}
 		}
 	}
