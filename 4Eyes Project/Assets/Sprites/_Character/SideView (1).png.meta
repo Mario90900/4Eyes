@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 5607900a3e87d614aa9b7da14dba3ba4
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 450
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SideHead
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 821
+        width: 557
+        height: 1114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideBody
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2400
+        width: 409
+        height: 445
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideLA
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1307
+        width: 190
+        height: 339
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideRA
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1688
+        width: 296
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideLLS
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 665
+        width: 205
+        height: 452
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideRLS
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 701
+        width: 247
+        height: 423
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideView (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 729
+        width: 233
+        height: 437
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideLeg Bent
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 764
+        width: 282
+        height: 494
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideLegBent2
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 334
+        width: 219
+        height: 324
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SideLegBent3
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 242
+        width: 211
+        height: 388
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
