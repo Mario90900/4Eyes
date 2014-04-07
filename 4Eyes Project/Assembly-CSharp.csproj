@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Gun.cs" />
      <Compile Include="Assets\Scripts\HealthControl.cs" />
      <Compile Include="Assets\Scripts\HealthPickup.cs" />
+     <Compile Include="Assets\Scripts\HeartHandler.cs" />
      <Compile Include="Assets\Scripts\LayBombs.cs" />
      <Compile Include="Assets\Scripts\MainCharacterControl.cs" />
      <Compile Include="Assets\Scripts\Pauser.cs" />

@@ -69,7 +69,8 @@ public class MainCharacterControl : MonoBehaviour
 				jump = false;
 				isClimbing = false;
 				rigidbody2D.gravityScale = 1f;
-				anim.SetBool("isClimbing", isClimbing);
+				anim.SetBool("climbing", isClimbing);
+				anim.SetTrigger("jump");
 			}
 
 		} else {
@@ -110,7 +111,7 @@ public class MainCharacterControl : MonoBehaviour
 				transform.position  = new Vector3(x, transform.position.y, transform.position.z);
 				rigidbody2D.velocity = new Vector2 (0, 0);
 				rigidbody2D.gravityScale = 0f;
-				anim.SetBool("isClimbing", isClimbing);
+				anim.SetBool("climbing", isClimbing);
 			}
 		}
 	}
