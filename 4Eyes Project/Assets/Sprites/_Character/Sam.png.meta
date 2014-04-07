@@ -48,8 +48,8 @@ TextureImporter:
     - name: Sam Head
       rect:
         serializedVersion: 2
-        x: 215
-        y: 2129
+        x: 205
+        y: 2147
         width: 611
         height: 846
       alignment: 0
@@ -106,6 +106,42 @@ TextureImporter:
         y: 1127
         width: 147
         height: 376
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Mouth
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2532
+        width: 77
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Sam_8
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1652
+        width: 7
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Left eye
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 2590
+        width: 103
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Right eye
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 2594
+        width: 108
+        height: 84
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 
