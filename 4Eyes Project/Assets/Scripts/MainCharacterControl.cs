@@ -17,11 +17,13 @@ public class MainCharacterControl : MonoBehaviour
 	private bool atBottom = false;
 	private bool canClimb = false;
 	private Animator anim;
+	private HealthControl playerHealth;
 	
 	// Use this for initialization
 	void Awake ()
 	{
-		groundCheck = transform.Find ("groundCheck");
+		groundCheck = transform.Find("groundCheck");
+		playerHealth = (HealthControl) GetComponent("HealthControl");
 		anim = GetComponent<Animator>();
 	}
 
@@ -69,7 +71,6 @@ public class MainCharacterControl : MonoBehaviour
 				jump = false;
 				isClimbing = false;
 				rigidbody2D.gravityScale = 1f;
-				anim.SetBool("climbing", isClimbing);
 				anim.SetTrigger("jump");
 			}
 
@@ -111,7 +112,7 @@ public class MainCharacterControl : MonoBehaviour
 				transform.position  = new Vector3(x, transform.position.y, transform.position.z);
 				rigidbody2D.velocity = new Vector2 (0, 0);
 				rigidbody2D.gravityScale = 0f;
-				anim.SetBool("climbing", isClimbing);
+				anim.SetTrigger("climbing");
 			}
 		}
 	}
@@ -125,19 +126,10 @@ public class MainCharacterControl : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-	void OnTriggerEnter2D(Collider2D otherCollider)
-	{
-
-	}
-
-	void OnTriggerExit2D(Collider2D otherCollider)
-	{
-
-	}
-
-	void OnTriggerStay2D(Collider2D otherCollider)
-	{
-
+	void takeDamage(float value){
+		if (!(playerHealth.checkInvincibility())){
+			playerHealth.hurt(value);
+		}
 	}
 }
 

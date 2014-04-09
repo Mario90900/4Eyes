@@ -5,33 +5,31 @@ public class HealthControl : MonoBehaviour
 {
 	public float health = 6f;
 	public float maxHealth = 6f;
-	public float invincibleTime = 15f;
+	public float invincibleTime = 3f; //In Seconds
 
-	private float invincibleCount;
+	private float invincibleStartTime;
 	private bool isInvincible = false;
 	private HeartHandler uiHandler;
 	
 		void Awake ()
 		{
-			invincibleCount = invincibleTime;
 			uiHandler = (HeartHandler) GameObject.Find("Main Camera").GetComponent("HeartHandler");
 		}
 
 		void FixedUpdate() //Counts down the invincibility for when it should wear off
 		{
-			if (invincibleCount != 0) {
-					invincibleCount--;
-			} else {
-					isInvincible = false;
+			if ((Time.fixedTime - invincibleStartTime) > invincibleTime) {
+				isInvincible = false;
+				invincibleStartTime = 0;
 			}
 		}
 
-		bool checkInvincibility() //To determine if the player is still invincible
+		public bool checkInvincibility() //To determine if the player is still invincible
 		{
 			return isInvincible;
 		}
 
-		void heal (int amount) //Heals the player for the set amount
+		public void heal (float amount) //Heals the player for the set amount
 		{
 			if ((health + amount) >= maxHealth){
 					health = maxHealth;
@@ -41,7 +39,7 @@ public class HealthControl : MonoBehaviour
 			uiHandler.updateHearts(health);
 		}
 
-		void hurt (int amount) //Hurts the player's health for the sent amount
+		public void hurt (float amount) //Hurts the player's health for the sent amount
 		{
 			if ((health - amount) <= 0f) {
 					health = 0;
@@ -52,6 +50,7 @@ public class HealthControl : MonoBehaviour
 			if (health == 0) {
 					playerDie();
 			}
+			invincibleStartTime = Time.fixedTime;
 			isInvincible = true;
 		}
 
