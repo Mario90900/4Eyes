@@ -1,0 +1,29 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1172]
+    Renderer: AMD Radeon HD 7900 Series
+    Vendor:   ATI
+    VRAM:     3053 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Jonathon Secora\Documents\GitHub\4Eyes\4Eyes Project\4Eyes_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.253188 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 742.
+Total: 0.550812 ms (FindLiveObjects: 0.024615 ms CreateObjectMapping: 0.008311 ms MarkObjects: 0.114765 ms  DeleteObjects: 0.019820 ms)
+
